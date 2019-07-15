@@ -1,0 +1,57 @@
+{
+    "id":"554af654-99f1-4de2-9663-65d4f487f29a",
+    "apiVersion":"10",
+    "app":{
+        "id":"epyoetut",
+        "name":"com.zzcm.wtwd",
+        "version":"1.0.0"
+    },
+    "device":{
+        "did":"864230036377784",
+        "type":1,
+        "os":1,
+        "osVersion":"6.0",
+        "vendor":"HONOR",
+        "model":"NEM-AL10",
+        "ua":"Mozilla/5.0 (Linux; Android 5.1.1; vivo X7 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
+        "connType":1,
+        "androidId":"2b1822e7afaab2e4",
+        "imsi":"",
+        "height":1812,
+        "width":1080,
+        "carrier":1,
+        "dpi":480,
+        "mac":"44:c3:46:f4:6b:05",
+        "ip":"112.95.161.57",
+	"isForeignIp": 0
+    },
+    "geo":{
+        "latitude":22.544177,
+        "longitude":113.944334,
+        "timestamp":1515034624700
+    },
+    "adSlot":{
+        "id":"bzaddftc",
+        "size":{
+            "width":640,
+            "height":100
+        },
+        "minCpm":0,
+        "orientation":1
+    },
+   "adSources": [
+     {
+      "dspCode": "",
+      "dspAppId": -1,
+      "adSlotId":""
+     }
+   ],
+    "extInfo":{
+      "channelId":"AU8888",
+      "subChannelId":"1",
+      "mid":"ssiddca98c74423142258b994801ed9f7749",
+      "sdkVersion":"V.1.17071700(ZZ)",
+      "adGroupId":22
+  }
+}
+

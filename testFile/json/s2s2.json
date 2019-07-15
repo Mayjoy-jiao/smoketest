@@ -1,0 +1,50 @@
+{
+  "id" : "2add876779da45b29a2c6c6e04be9879",
+  "apiVersion" : "10.0",
+  "app" : {
+    "id": "lghdc2bl",
+    "name" : "com.guaguagua.com",
+    "version" : "4.0"
+  },
+  "device" : {
+    "did" : "86339602226431586339602226431500",
+    "type" : 1,
+    "os" : 1,
+    "osVersion" : "4.2.2",
+    "vendor" : "nubia",
+    "model" : "NX403A",
+    "ua" : "Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; NX403A Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.32",
+    "connType" : 1,
+    "androidId" : "d1cd48fa22550f89",
+    "imsi" : "460016756228219",
+    "height" : 1280,
+    "width" : 720,
+    "carrier" : 2,
+    "dpi" : 320,
+    "mac" : "98:6c:f5:26:6a:d3",
+    "ip" : "199.168.0.6",
+    "isForeignIp": 0
+  },
+  "geo" : {
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "timestamp" : 1501469210641
+  },
+  "adSlot" : {
+    "id" : "adxDsp_129_1",
+    "size" : {
+      "width" : 640,
+      "height" : 960
+    },
+    "minCpm" : 0,
+    "orientation" : 0
+  },
+  "adSign": 0,
+  "extInfo":{
+      "channelId":"AU8888",
+      "subChannelId":"0050",
+      "mid":"ssiddca98c74423142258b994801ed9f779f",
+      "sdkVersion":"V.1.17071700(ZZ)",
+      "adGroupId":46
+  }
+}

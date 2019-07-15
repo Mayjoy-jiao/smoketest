@@ -1,0 +1,29 @@
+{
+  "id": "id-123-123",
+  "device": {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; vivo X7 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
+    "make": "Huawei",
+    "model": "NEM-AL10",
+    "os": "Android",
+    "osv": "9.0",
+    "mcc": "123456",
+    "imsi": "",
+    "androidid": "2b1822e7afaab2e4",
+    "mac": "44:c3:46:f4:6b:05",
+    "imei": "863244036388855",
+    "ext": {
+      "channelcode": "AU8888_0050",
+      "subchannelcode": "sub_channel_123",
+      "mid": "7f5c47d5-65d2-43ee-9880-2b616da7a6c6",
+      "sdkversion": "3.2.1",
+      "adgroupid": 62,
+      "adgrouptype": 2
+    }
+  },
+  "version": "5.4.3.2",
+  "imptype": 2,
+  "ext": {
+      "configids": ["adxDsp_182_4", "adxDsp_183_4", "adxDsp_184_4"],
+    "placements": ["hnqqquct"]
+  }
+}

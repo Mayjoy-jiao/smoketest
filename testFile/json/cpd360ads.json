@@ -1,0 +1,26 @@
+{
+    "url":"http://zonghe.m.so.com/api/business/queryAdByPnames?from=test&ch=300100&adspaceid=u5kHdIh0JE&ip=112.95.161.57",
+    "data":{
+        "imei":"863389035575417",
+        "androidid":"bde81d2e7f383340",
+        "serialno":"123",
+        "md":"MI 2S",
+        "br":"Xiaomi",
+        "os":22,
+        "osv":"5.1",
+        "carrier":"46000",
+        "sw":1080,
+        "sh":1920,
+        "dip":3.5,
+        "apppkg":"com.aitoutiao.newsapp",
+        "appname":"爱头条",
+        "appv":"6.2.0",
+        "appvint":28,
+        "so":1,
+        "net":1,
+        "ua":"Mozilla/5.0 (Linux; Android 5.1.1; vivo X7 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36"
+    },
+    "cpdName":"360对接调试",
+    "cpdAppName":"360对接调试-联调测试(测试参数)"
+}
+

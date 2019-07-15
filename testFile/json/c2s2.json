@@ -1,0 +1,29 @@
+{
+  "id": "id-123-123",
+  "device": {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; vivo X7 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
+    "make": "Huawei",
+    "model": "NEM-AL10",
+    "os": "Android",
+    "osv": "9.0",
+    "mcc": "123456",
+    "imsi": "",
+    "androidid": "2b1822e7afaab2e4",
+    "mac": "44:c3:46:f4:6b:05",
+    "imei": "863244036388855",
+    "ext": {
+			"channelcode":"chenlong1",
+            "subchannelcode":"chenlong2",
+			"mid": "uuid5078b346a50043b8893ff5d1075691ec",
+			"sdkversion": "V.1.19010500(ZZ)",
+			"adgroupid": 25,
+			"adgrouptype": 22
+    }
+  },
+  "version": "5.4.3.2",
+  "imptype": 2,
+  "ext": {
+      "configids": ["adxDsp_210_4"],
+    "placements": ["oet3padh"]
+  }
+}
