@@ -147,6 +147,7 @@ class C2s2(unittest.TestCase):
         else:
             self.assertEqual(self.result[0], 1)
             print("PGdb impressions test failed")
+        time.sleep(60)
 
     def checkClick(self):
         """

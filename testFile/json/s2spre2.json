@@ -44,7 +44,8 @@
       "subChannelId":"8888",
       "mid":"ssiddca98c74423142258b994801ed9f779f",
       "sdkVersion":"V.1.17071700(ZZ)",
-      "adGroupId":52
+      "adGroupId":52,
+      "preRequestTs" : 1565683771000
   },
   "adSign": 1
   

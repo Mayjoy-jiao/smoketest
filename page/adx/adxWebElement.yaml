@@ -1,0 +1,97 @@
+LoginPage:
+  LOGIN_FORM_ACCOUNT_SELECTOR: "id, loginName"
+  LOGIN_FORM_PASSWORD_SELECTOR: "id, password"
+  LOGIN_FORM_VALIDATECODE_SELECTOR: "id, validateCode"
+  LOGIN_FORM_SUBMIT_SELECTOR: "c, btn"
+
+MainPage:
+  # MAIN_LEFTMENU_DEVELOPER_ADSENSE_SELECTOR : 'x, //*[@id="sidebar"]/div[2]/div[2]/ul[4]/li/ul/li[3]/div/a"'
+  MAIN_LEFTMENU_DEVELOPER_MANAGE_SELECTOR: 'x, //*[@id="sidebar"]/div[2]/div[2]/ul[4]/li/ul/li[%d]/div/a'
+
+DeveloperAdsenseManagePage:
+  DEVELOPER_ADSENSE_MANAGE_SEARCH_ADID_SELECTOR: 'x, //*[@id="pubAppAdSoltForm"]/div/table/tbody/tr[1]/td[1]/input'
+  DEVELOPER_ADSENSE_MANAGE_SEARCH_BUTTON_SELECTOR: 'c, buttonContent'
+  DEVELOPER_ADSENSE_INFO_SELECTOR: 'x, //*[@id="navTab"]/div[2]/div[2]/div[2]/div[2]/div[2]/div/table/tbody/tr'
+  DEVELOPER_ADSENSE_MANAGE_ADCONFIG_NEW_SELECTOR: 'c, navTab-link'
+
+DeveloperAdsenseManage_AdConfigPage:
+  DEVELOPER_ADSENSE_ADCONFIG_TITLEBAR_SELECTOR: 'x, /html/body/div[1]/div/form[1]/div[1]/div/div[%d]/span'
+  DEVELOPER_ADSENSE_ADCONFIG_IFRAME_SELECTOR: "t, iframe"
+  DEVELOPER_ADSENSE_ADCONFIG_TESTAD_SELECTOR: "x, /html/body/div[1]/div/form[1]/div[3]/div[3]/div/div/div/div/div[1]/input"
+  DEVELOPER_ADSENSE_ADCONFIG_REQUESTNUM_SELECTOR: "x, /html/body/div[1]/div/form[1]/div[3]/div[1]/div/div/div/input"
+  DEVELOPER_ADSENSE_ADCONFIG_BIDDINGRATE_SELECTOR: "x, /html/body/div[1]/div/form[1]/div[3]/div[2]/div/div/div/input"
+  DEVELOPER_ADSENSE_ADCONFIG_SAVEBUTTON1_SELECTOR: "x, /html/body/div[1]/div/form[1]/div[3]/div[4]/div/div/button"
+  DEVELOPER_ADSENSE_ADCONFIG_SEARCH_DSP_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[1]/div/div/div/div[1]/div/input'
+  DEVELOPER_ADSENSE_ADCONFIG_SEARCH_DSP_LI_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[1]/div/div/div/div[2]/ul[2]/li[4]'
+  DEVELOPER_ADSENSE_ADCONFIG_SEARCH_DSP_RECORD_SELECTOR: "x, /html/body/div[1]/div/div[1]/div/div[2]/table/tbody/tr[%d]/td[2]/div/span"
+  DEVELOPER_ADSENSE_ADCONFIG_SEARCH_DSP_APP_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[2]/div/div/div/div[1]/div/input'
+  DEVELOPER_ADSENSE_ADCONFIG_SEARCH_DSP_APP_LI_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[2]/div/div/div/div[2]/ul[2]/li[2]'
+  DEVELOPER_ADSENSE_ADCONFIG_SEARCH_DSP_TYPE_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[3]/div/div/div/div[1]/div/span'
+  DEVELOPER_ADSENSE_ADCONFIG_SEARCH_DSP_TYPE_LI_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[3]/div/div/div/div[2]/ul[2]/li[2]'
+  DEVELOPER_ADSENSE_ADCONFIG_SEARCH_DSP_ISFULLTIME_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[4]/div/div/div/div[1]'
+  DEVELOPER_ADSENSE_ADCONFIG_SEARCH_DSP_ISFULLTIME_LI_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[4]/div/div/div/div[2]/ul[2]/li[3]'
+  DEVELOPER_ADSENSE_ADCONFIG_SEARCH_DSP_TBODY_SELECTOR: 'x, /html/body/div[1]/div/div[1]/div/div[2]/table/tbody/tr'
+  DEVELOPER_ADSENSE_ADCONFIG_REFRESHBUTTON_SELECTOR: 'x, /html/body/div[1]/div/form[1]/div[3]/div[5]/div/div/button'
+
+
+  # SYP
+  # 广告配置(新)1级页面,顶部展示的广告位信息元素组
+  DEVELOPER_ADSENSE_ADCONFIG_TITLEBAR_SELECTOR2: 'x,/html/body/div[1]/div/form[1]/div[{}]/div/div[{}]/span'
+  # 广告配置(新)1级页面,前2个下拉框元素组
+  DEVELOPER_ADSENSE_ADCONFIG_DROPDOWNBOX1_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[%d]/div/div/div/div[1]/div/input'
+  # 广告配置(新)1级页面,后2个下拉框元素组
+  DEVELOPER_ADSENSE_ADCONFIG_DROPDOWNBOX2_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[%d]/div/div/div/div[1]/div/span'
+  # 广告配置(新)1级页面,DSP应用下拉框
+  DEVELOPER_ADSENSE_ADCONFIG_DROPDOWNBOX_DSPAPP_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[2]/div/div/div/div[1]/div/input'
+  # 广告配置(新)1级页面,DSP应用下拉框列表
+  DEVELOPER_ADSENSE_ADCONFIG_DROPDOWNLIST_DSPAPP_SELECTOR: 'x, /html/body/div[1]/div/form[2]/div/div[2]/div/div/div/div[2]/ul[2]/li[1]'
+  # 广告配置(新)1级页面,列表字段元素组
+  DEVELOPER_ADSENSE_ADCONFIG_TBFEILD_SELECTOR1: 'x, /html/body/div[1]/div/div[1]/div/div[2]/table/tbody/tr[{}]/td[{}]/div/span'
+  # 广告配置(新)1级页面,列表字段元素组
+  DEVELOPER_ADSENSE_ADCONFIG_TBFEILD_SELECTOR2: 'x, /html/body/div[1]/div/div[1]/div/div[2]/table/tbody/tr[{}]/td[{}]/div/div/strong'
+  # 广告配置(新)1级页面,列表第一行字段元素组
+  DEVELOPER_ADSENSE_ADCONFIG_TBFEILD_ROW1_SELECTOR: 'x, /html/body/div[1]/div/div[1]/div/div[2]/table/tbody/tr[1]/td[%d]/div/span'
+  # 广告配置(新)1级页面,列表第1行开闭text
+  DEVELOPER_ADSENSE_ADCONFIG_SWITCH_SELECTOR: 'x, /html/body/div[1]/div/div[1]/div/div[2]/table/tbody/tr[1]/td[12]/div/div/span/span/span'
+  # 广告配置(新)1级页面,列表第1行的配置按钮
+  DEVELOPER_ADSENSE_ADCONFIG_CONFIG_BTN_SELECTOR: 'x, /html/body/div[1]/div/div[1]/div/div[2]/table/tbody/tr[1]/td[13]/div/div/button[1]'
+  # 广告配置(新)1级页面,列表第1行的保存按钮
+  DEVELOPER_ADSENSE_ADCONFIG_SAVE_BTN_SELECTOR: 'x, /html/body/div[1]/div/div[1]/div/div[2]/table/tbody/tr[1]/td[13]/div/div/button[2]'
+
+
+DAM_AdCfg_TrafficCfgPage:
+
+  # 广告配置(新)2级页面,页面顶部展示的广告位及DSP广告源信息元素组
+  TRAFFICCFG_TITLEBAR_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[1]/div[1]/div[{}]/div[{}]/span'
+  # 广告配置(新)2级页面,二级预下发量配置项输入框元素组
+  TRAFFICCFG_CONFIG_ITEM_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/div[1]/div[{}]/div[{}]/div/input'#从1,2开始
+  # 广告配置(新)2级页面,二级预下发量配置行元素组
+  TRAFFICCFG_CONFIG_ROWS_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/div[1]'
+  # 广告配置(新)2级页面,有效时间段输入框
+  TRAFFICCFG_CONFIG_TIMEINPUT_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[4]/div/div[1]/div/input'
+  # 广告配置(新)2级页面,有效时间段输入框元素组
+  TRAFFICCFG_CONFIG_TIMEINPUTS_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/div[1]/div[{}]/div[4]/div/div[1]/div/input'
+  # 广告配置(新)2级页面,时间段下拉列表,1,1对应的是开始时间00,2,2对应的是结束时间01
+  TRAFFICCFG_CONFIG_TIME_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[4]/div/div[2]/div/div/div/div[{}]/div[2]/div[1]/ul/li[{}]'
+  # 广告配置(新)2级页面,开始时间下拉列表
+  TRAFFICCFG_CONFIG_START_TIME_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[4]/div/div[2]/div/div/div/div[1]/div[2]/div[1]/ul/li[2]'
+  # 广告配置(新)2级页面,结束时间下拉列表
+  TRAFFICCFG_CONFIG_END_TIME_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div[4]/div/div[2]/div/div/div/div[2]/div[2]/div[1]/ul/li[3]'
+  # 广告配置(新)2级页面,二级预下发量配置删除按钮
+  TRAFFICCFG_CONFIG_DELETE_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/div[1]/div[%d]/div[8]/a[1]/i'#从1开始
+  # 广告配置(新)2级页面,二级预下发量配置新增一行按钮
+  TRAFFICCFG_CONFIG_ADD_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/div[1]/div[%d]/div[8]/a[2]/i'#从1开始
+  # 广告配置(新)2级页面,批量新增按钮
+  TRAFFICCFG_BATCH_ADD_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[1]/div[3]/div[9]/a[1]/button'
+  # 广告配置(新)2级页面,重置按钮
+  TRAFFICCFG_RESET_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[1]/div[3]/div[9]/a[2]/button'
+  # 广告配置(新)2级页面,确认重置
+  TRAFFICCFG_RESET_OK_SELECTOR: 'x, /html/body/div[8]/div[2]/div/div/div/div/div[3]/button[2]'
+  # 广告配置(新)2级页面,批量修改输入框元素组
+  TRAFFICCFG_BATCH_INPUT_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/form/div[{}]/div[{}]/div/div/div/input'#1,2,3,4行第1列
+  # 广告配置(新)2级页面,批量修改开关元素组
+  TRAFFICCFG_BATCH_SWITCH_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[2]/form/div[{}]/div[2]/div/div/span/input'#1,2,3,4行第2列
+  # 广告配置(新)2级页面,刷新按钮
+  TRAFFICCFG_REFRESH_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[3]/div/button[1]'
+  # 广告配置(新)2级页面,保存按钮
+  TRAFFICCFG_SAVE_SELECTOR: 'x, /html/body/div[3]/div[2]/div/div/div[2]/div/div[3]/div/button[2]'

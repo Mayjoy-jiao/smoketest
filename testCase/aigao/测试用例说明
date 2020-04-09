@@ -1,0 +1,34 @@
+aigao/testAigao_Sdkmediadata
+	SDK媒体所有节点上报
+
+aigao/testGetSdkConfiguration
+	2.1.3.208-3 高协议版本的sdk媒体包既可以拉取高协议版本的配置信息，也可以拉取低版本的配置信息，反之不可以
+	2.1.3.208-3 SDK配置下发值新增以下字段：
+		countdownTime:5
+		countdownRate:0
+		disableBackKey1:true
+		disableBackKey2:true
+		bgTemplateClickRate:100
+	5.1.3.208-6 验证背景可点击比例倍数（bgTemplateClickMultiple）的设置下发是否准确
+	5.1.3.208-6 验证下载保活开关downloadWakeSwitch字段默认值为False是否准确
+
+aigao/testAigao_Sdkdata
+	SDK媒体上报单个节点
+
+aigao/testUpdateMediaSdk
+	媒体包升级
+
+aigao/testAigao_Sdkvideodata
+	激励视频数据上报
+
+aigao/testGetNOCAd
+	拉取NOC广告：
+		5.1.3.208-4版本中的屏蔽省市，用户拉取不到广告
+		5.1.3.208-4版本中的NOC广告拉活配置下发
+		5.1.3.208-5版本中的NOC广告下载会下发包名和版本号
+		5.1.3.208-4版本中的NOC广告不会下发给待安装、已经安装和已卸载的用户
+		5.1.3.208-5版本中的NOC广告拉活配置不下发给已卸载的用户
+
+aigao/testGetChannelConfig
+    获取渠道配置：
+        1.5.1.3.208-6 [渠道_修改_广告设置_垃圾清理广告组]设置“终极黑名单”、“触发app黑名单”是否生效,默认值为“是”

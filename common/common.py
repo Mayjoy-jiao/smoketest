@@ -8,9 +8,12 @@ from common import configHttp as configHttp
 from common.Log import MyLog as Log
 from xlwt import easyxf
 import json
+import time
 import urllib
 import hashlib
 from xlutils.copy import copy
+import jpype
+from jpype import *
 
 
 localReadConfig = readConfig.ReadConfig()
@@ -21,6 +24,32 @@ logger = log.get_logger()
 
 caseNo = 0
 
+def runJVM():
+    # jvmPath = r'E:\port\javanew\jre\bin\client\jvm.dll'
+    jvmPath = jpype.getDefaultJVMPath()
+    # jarPath=r'E:\port\protocol-1.0.0.jar'
+    jarPath = os.path.join(proDir,'venv','protocol-1.0.0.jar')
+    return startJVM(jvmPath, "-ea", "-Djava.class.path=%s"%jarPath )
+
+def stopJVM():
+    return shutdownJVM()
+
+def checkSum(jsdata):
+    Test=JClass('com.zzcm.protocol.ParserUtil')
+    return Test.getCRC(jsdata)
+
+def decrypt(re):
+    Test=JClass('com.zzcm.protocol.CodeUtil')
+    return Test.getInstance().decrypt(re)
+
+def runaigaoapi(rdata,data_url):
+
+    data = json.dumps(rdata)
+    checksum = checkSum(data)
+    datas = {'data': data, 'checkSum': checksum}
+    Res = requests.post(url=data_url, data=datas).text
+    response = decrypt(Res)
+    return json.loads(response)
 
 def get_visitor_token():
     """
@@ -33,7 +62,6 @@ def get_visitor_token():
     token = info.get("info")
     logger.debug("Create token:%s" % (token))
     return token
-
 
 def set_visitor_token_to_config():
     """
@@ -191,6 +219,232 @@ def gethash(filepath):
     print(filepath,"hash is ", hash)
     return hash
 
+def get_dsp_application_config(url, configid):
+    """
+    获取dsp应用配置信息 /ad/v1/getAdSimConfig
+    :param url: 接口地址
+    :param configid: dsp应用的广告位id  例如：adxDsp_1_1
+    :return: <list>该应用的广告位配置信息
+    """
+
+    r = requests.post(url).json()
+    res = r["adxDspConfigBean"]
+    print(res)
+    for i in res:
+        if i["configid"] == configid:
+            re_config = i
+    return re_config
+
+def get_request_json(api,appid=None, channelId=None, subChannelId=None, mid=None, type=0, confingid=None, adid=None,commit_time = int(time.time()*1000)):
+    """
+    :param api: 接口形式
+    :param appid: 开发者应用id
+    :param channelId: 渠道id
+    :param subChannelId: 子渠道id
+    :param mid: mad
+    :param type:二类广告的类型 :c2s:1(一类)；2（普通2类）；3（预下发二类）；4（dsp sdk补充）
+    :param confingid: dsp应用广告位id ，C2S中，可能是个列表，如["adxDsp_212_1"]
+    :param adid: 开发者广告位id
+    :param commit_time: 预下发二类广告请求的有效时间
+    :return:
+    """
+    s2s_1_json = {
+    "id":"554af654-99f1-4de2-9663-65d4f487f29a",
+    "apiVersion":"10",
+    "app":{
+        "id":appid,
+        "name":"com.zzcm.wtwd",
+        "version":"1.0.0"
+    },
+    "device":{
+        "did":"864230036377784",
+        "type":1,
+        "os":1,
+        "osVersion":"6.0",
+        "vendor":"HONOR",
+        "model":"NEM-AL10",
+        "ua":"Mozilla/5.0 (Linux; Android 5.1.1; vivo X7 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
+        "connType":1,
+        "androidId":"2b1822e7afaab2e4",
+        "imsi":"",
+        "height":1812,
+        "width":1080,
+        "carrier":1,
+        "dpi":480,
+        "mac":"44:c3:46:f4:6b:05",
+        "ip":"112.95.161.57",
+        "isForeignIp": 0
+    },
+    "geo":{
+        "latitude":22.544177,
+        "longitude":113.944334,
+        "timestamp":1515034624700
+    },
+    "adSlot":{
+        "id":adid,
+        "size":{
+            "width":640,
+            "height":100
+        },
+        "minCpm":0,
+        "orientation":1
+    },
+   "adSources": [
+     {
+      "dspCode": "",
+      "dspAppId": -1,
+      "adSlotId":""
+     }
+   ],
+    "extInfo":{
+      "channelId": channelId,
+      "subChannelId": subChannelId,
+      "mid": mid,
+      "sdkVersion":"V.1.17071700(ZZ)",
+      "adGroupId":39
+  }
+}
+    s2s_2_json = {
+  "id" : "2add876779da45b29a2c6c6e04be9879",
+  "apiVersion" : "10.0",
+  "app" : {
+    "id": appid,
+    "name" : "com.guaguagua.com",
+    "version" : "4.0"
+  },
+  "device" : {
+    "did" : "86339602226431586339602226431500",
+    "type" : 1,
+    "os" : 1,
+    "osVersion" : "4.2.2",
+    "vendor" : "nubia",
+    "model" : "NX403A",
+    "ua" : "Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; NX403A Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.32",
+    "connType" : 1,
+    "androidId" : "d1cd48fa22550f89",
+    "imsi" : "460016756228219",
+    "height" : 1280,
+    "width" : 720,
+    "carrier" : 2,
+    "dpi" : 320,
+    "mac" : "98:6c:f5:26:6a:d3",
+    "ip" : "199.168.0.6",
+    "isForeignIp": 0
+  },
+  "geo" : {
+    "latitude" : 0.0,
+    "longitude" : 0.0,
+    "timestamp" : 1562860799
+  },
+  "adSlot" : {
+    "id" : confingid,
+    "size" : {
+      "width" : 640,
+      "height" : 960
+    },
+    "minCpm" : 0,
+    "orientation" : 0
+  },
+  "adSign": type,
+  "extInfo":{
+      "channelId": channelId,
+      "subChannelId": subChannelId,
+      "mid": mid,
+      "sdkVersion":"V.1.17071700(ZZ)",
+      "adGroupId":39,
+      "preRequestTs":1563206400000
+  }
+}
+    s2s_2_y_json = {
+        "id": "2add876779da45b29a2c6c6e04be9879",
+        "apiVersion": "10.0",
+        "app": {
+            "id": appid,
+            "name": "com.guaguagua.com",
+            "version": "4.0"
+        },
+        "device": {
+            "did": "86339602226431586339602226431500",
+            "type": 1,
+            "os": 1,
+            "osVersion": "4.2.2",
+            "vendor": "nubia",
+            "model": "NX403A",
+            "ua": "Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; NX403A Build/JDQ39) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.32",
+            "connType": 1,
+            "androidId": "d1cd48fa22550f89",
+            "imsi": "460016756228219",
+            "height": 1280,
+            "width": 720,
+            "carrier": 2,
+            "dpi": 320,
+            "mac": "98:6c:f5:26:6a:d3",
+            "ip": "199.168.0.6",
+            "isForeignIp": 0
+        },
+        "geo": {
+            "latitude": 0.0,
+            "longitude": 0.0,
+            "timestamp": 1562860799
+        },
+        "adSlot": {
+            "id": confingid,
+            "size": {
+                "width": 640,
+                "height": 960
+            },
+            "minCpm": 0,
+            "orientation": 0
+        },
+        "adSign": 1,
+        "extInfo": {
+            "channelId": channelId,
+            "subChannelId": subChannelId,
+            "mid": mid,
+            "sdkVersion": "V.1.17071700(ZZ)",
+            "adGroupId": 39,
+            "preRequestTs": commit_time
+        }
+    }
+    c2s_json = {
+  "id": "id-123-123",
+  "device": {
+    "ua": "Mozilla/5.0 (Linux; Android 5.1.1; vivo X7 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Mobile Safari/537.36",
+    "make": "Huawei",
+    "model": "NEM-AL10",
+    "os": "Android",
+    "osv": "9.0",
+    "mcc": "123456",
+    "imsi": "",
+    "androidid": "2b1822e7afaab2e4",
+    "mac": "44:c3:46:f4:6b:05",
+    "imei": "863244036388855",
+    "ext": {
+      "channelcode": "{{channelId}}",
+      "subchannelcode": "{{subChannelId}}",
+      "mid": "{{mid}}",
+      "sdkversion": "3.2.1",
+      "adgroupid": 62,
+      "adgrouptype": 2
+    }
+  },
+  "version": "10",
+  "imptype": type,
+  "ext": {
+    "configids": confingid,
+      "placements": adid
+  }
+}
+    if api=="s2s_1_json":
+        return s2s_1_json
+    elif api=="s2s_2_json":
+        return s2s_2_json
+    elif api == "c2s_json":
+        return c2s_json
+    elif api == "s2s_2_y_json":
+        return s2s_2_y_json
+    else:
+        return None
 
 
 

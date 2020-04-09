@@ -70,12 +70,12 @@ class S2s2(unittest.TestCase):
     def checkPGdb(self):
         time.sleep(2)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        # self.sql = "select publisher_request from public.stats where ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257' and dsp_app_id='129' order by timestamp desc"
+        # self.sql = "select publisher_request from public.stats where ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257' and dsp_app_id='156' order by timestamp desc"
         # self.cursor = configPG.executeSQL(self.sql)
         # self.result = configPG.get_all(self.cursor)
 
         # self.assertEqual(self.result[0], 1)
-        # self.sql = "select adx_issued,to_dsp_request from public.stats where dsp_app_id='129'and ad_type='1' and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257' order by timestamp DESC"
+        # self.sql = "select adx_issued,to_dsp_request from public.stats where dsp_app_id='156'and ad_type='1' and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257' order by timestamp DESC"
         # self.cursor = configPG.executeSQL(self.sql)
         # self.result = configPG.get_one(self.cursor)
         # print(self.result)
@@ -93,11 +93,11 @@ class S2s2(unittest.TestCase):
 
         if self.result == '0':
             self.assertEqual(self.info["statusCode"], self.code)
-            self.assertEqual(self.info['ads'][0]['configId'],'adxDsp_129_1')
+            self.assertEqual(self.info['ads'][0]['configId'],'adxDsp_156_1')
 
         if self.result == '1':
             self.assertEqual(self.info['statusCode'], self.code)
-            self.assertEqual(self.info['ads'][0]['configId'], 'adxDsp_129_1')
+            self.assertEqual(self.info['ads'][0]['configId'], 'adxDsp_156_1')
 
 
     def checkShow(self):
@@ -114,7 +114,7 @@ class S2s2(unittest.TestCase):
         time.sleep(1)
 
         beaurl = self.info['ads'][0]['adxBeaconUrl']
-        self.url = self.info['ads'][0]['callUrl3']['show'][0]['parameters']
+        self.url = self.info['ads'][0]['callUrl3']['show'][1]['parameters']
         self.url = beaurl + self.url
         time.sleep(1)
 
@@ -125,7 +125,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select impression2 from public.stats where dsp_app_id='129'and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257' order by timestamp DESC"
+        self.sql = "select impression2 from public.stats where dsp_app_id='156'and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257' order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -154,7 +154,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select click from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select click from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -184,7 +184,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select download_start from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select download_start from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -213,7 +213,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select download_completed from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select download_completed from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -242,7 +242,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select install_start from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select install_start from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -271,7 +271,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select app_open from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select app_open from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -300,7 +300,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select install_completed from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select install_completed from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -329,7 +329,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select app_activated from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select app_activated from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -358,7 +358,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select active2 from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select active2 from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -389,7 +389,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select c2s_dsp_request from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select c2s_dsp_request from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -420,7 +420,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select c2s_dsp_issued from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select c2s_dsp_issued from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -451,7 +451,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select pic_download_start from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select pic_download_start from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -482,7 +482,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select pic_download_completed from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select pic_download_completed from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -513,7 +513,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select pic_download_failed from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select pic_download_failed from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -544,7 +544,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select give_up from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select give_up from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -575,7 +575,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select url_jump from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select url_jump from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -606,7 +606,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select menual_close_button from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select menual_close_button from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -637,7 +637,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select auto_close_button from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select auto_close_button from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -668,7 +668,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select install_remind_failed from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select install_remind_failed from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -699,7 +699,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select news_impression from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select news_impression from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -730,7 +730,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select news_click from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select news_click from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -761,7 +761,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select download_failed from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select download_failed from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)
@@ -793,7 +793,7 @@ class S2s2(unittest.TestCase):
 
         time.sleep(1)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
-        self.sql = "select install_failed from public.stats where dsp_app_id='129' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
+        self.sql = "select install_failed from public.stats where dsp_app_id='156' and ad_type='1'and ad_group_id='46'and ad_channel_id='645' and ad_customer_id='14257'order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)
         self.result = configPG.get_one(self.cursor)
         print(self.result)

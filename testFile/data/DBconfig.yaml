@@ -1,0 +1,65 @@
+TestDbConfig:
+  ADX_REPORT:
+    host : 192.168.0.66
+    port : 5432
+    user : root
+    pwd : aszx
+    db : adx_report
+
+  ADX_SSP:
+    host: 192.168.0.223
+    port: 3306
+    user: zzmanager
+    pwd: iadMOB-2013@0622)
+    db: ssp
+
+  ADX_WAREHOUSE:
+    host: 192.168.0.63
+    port: 5432
+    user: root
+    pwd: aszx
+    db: adx_warehouse
+
+StageDbConfig:
+  ADX_REPORT:
+    host : 113.31.86.153
+    port : 65432
+    user : adxroot
+    pwd : adxroot321
+    db : adx_report
+
+  ADX_SSP:
+    host: 113.31.86.153
+    port: 3306
+    user: zzmanager
+    pwd: iadMOB-2013@0622)
+    db: ssp
+
+  ADX_WAREHOUSE:
+    host: 113.31.86.153
+    port: 65432
+    user: adxroot
+    pwd: adxroot321
+    db: adx_warehouse
+
+ProductDbConfig:
+  ADX_REPORT:
+    host : 113.31.86.145
+    port : 75432
+    user : adx
+    pwd : K<6Y4okrGUiW@C)(~/{=2xd%PK}V}#l)
+    db : adx_report
+
+  ADX_SSP:
+    host: 113.31.86.145
+    port: 52993
+    user: zzcm
+    pwd: ssP-39a82dksj
+    db: ssp
+
+  ADX_WAREHOUSE:
+    host: 113.31.86.145
+    port: 64101
+    user: adxro
+    pwd: '>Q$PRXu.bfn~9^{lfwv@-dD)@W`IT-a^'
+    db: adx_warehouse

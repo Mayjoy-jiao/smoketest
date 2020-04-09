@@ -34,7 +34,7 @@ class Email:
 
         # defined email subject
         date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        self.subject = "ADX广告配置1.97版本自动化测试报告" + " " + date
+        self.subject = "自动化接口测试报告" + " " + date
 
         self.log = MyLog.get_log()
         self.logger = self.log.get_logger()

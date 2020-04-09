@@ -134,7 +134,7 @@ class C2sPre(unittest.TestCase):
         time.sleep(1)
         self.code = requests.request('GET', self.url)
 
-        time.sleep(1)
+        time.sleep(3)
         configPG.connectPG("root","aszx","5432","192.168.0.66","adx_report")
         self.sql = "select impression2 from public.stats where dsp_app_id='210'and ad_type='4'and ad_group_id='25' and ad_channel_id=451 and ad_customer_id=14207  order by timestamp DESC"
         self.cursor = configPG.executeSQL(self.sql)

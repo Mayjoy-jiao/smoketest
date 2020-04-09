@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='enums.proto',
   package='com.chinamobiad.adx.idl',
   syntax='proto3',
-  serialized_pb=_b('\n\x0b\x65nums.proto\x12\x17\x63om.chinamobiad.adx.idl*\x1b\n\x04\x42ool\x12\t\n\x05\x46\x61lse\x10\x00\x12\x08\n\x04True\x10\x01*\"\n\x06Status\x12\x0c\n\x08Inactive\x10\x00\x12\n\n\x06\x41\x63tive\x10\x01*c\n\x0b\x41uditStatus\x12\x0f\n\x0bUnSubmitted\x10\x00\x12\x14\n\x07\x44ropped\x10\xfe\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x14\n\x07Refused\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x0b\n\x07Pending\x10\x01\x12\n\n\x06Passed\x10\x02*\xa7\t\n\tEventType\x12\x16\n\x12UNKNOWN_EVENT_TYPE\x10\x00\x12\x15\n\x11PUBLISHER_REQUEST\x10\x01\x12\x0f\n\x0b\x42ID_REQUEST\x10\x02\x12\n\n\x06NO_BID\x10\x03\x12\x0f\n\x0b\x42ID_TIMEOUT\x10\x04\x12\x0e\n\nNOT_ISSUED\x10\x05\x12\n\n\x06ISSUED\x10\x06\x12\x0e\n\nIMPRESSION\x10\x07\x12\x0f\n\x0bIMPRESSION2\x10\x08\x12\t\n\x05\x43LICK\x10\t\x12\x12\n\x0e\x44OWNLOAD_START\x10\n\x12\x16\n\x12\x44OWNLOAD_COMPLETED\x10\x0b\x12\x11\n\rINSTALL_START\x10\x0c\x12\x15\n\x11INSTALL_COMPLETED\x10\r\x12\x0c\n\x08\x41PP_OPEN\x10\x0e\x12\x11\n\rAPP_ACTIVATED\x10\x0f\x12\x11\n\rCSS_REQUEST_1\x10\x10\x12\x10\n\x0c\x43SS_ISSUED_1\x10\x11\x12\x13\n\x0f\x43SS_SDK_REQUEST\x10\x12\x12\x12\n\x0e\x43SS_SDK_ISSUED\x10\x13\x12\x12\n\x0e\x43SS_SDK_FAILED\x10\x14\x12\x11\n\rCSS_REQUEST_2\x10\x15\x12\x13\n\x0f\x43SS_PARSE_START\x10\x16\x12\x15\n\x11\x43SS_PARSE_SUCCESS\x10\x17\x12\x10\n\x0c\x43SS_ISSUED_2\x10\x18\x12\x11\n\rC2S_REQUEST_2\x10\x19\x12\x1a\n\x16SDK_PRE_DOWNLOAD_START\x10\x1a\x12\x1e\n\x1aSDK_PRE_DOWNLOAD_COMPLETED\x10\x1b\x12\x1b\n\x17SDK_PRE_DOWNLOAD_FAILED\x10\x1c\x12\x1e\n\x1aPRE_DOWNLOAD_PARSE_REQUEST\x10\x1d\x12\x18\n\x14PRE_DOWNLOAD_SUCCESS\x10\x1e\x12\x17\n\x13PRE_DOWNLOAD_FAILED\x10\x1f\x12\x1f\n\x1bPRE_DOWNLOAD_PARSE_RESPONSE\x10 \x12\x08\n\x04\x44ROP\x10!\x12\x0b\n\x07\x41\x43TIVE2\x10\"\x12\x1e\n\x1a\x41\x44X_INTERCEPT_BY_FILL_RATE\x10#\x12\x1c\n\x18\x41\x44X_INTERCEPT_BY_TIMEOUT\x10$\x12\x13\n\x0f\x43\x32S_PRE_REQUEST\x10%\x12\x12\n\x0e\x43\x32S_PRE_ISSUED\x10&\x12\x13\n\x0f\x43\x32S_DSP_REQUEST\x10\'\x12\x12\n\x0e\x43\x32S_DSP_ISSUED\x10(\x12\x16\n\x12PIC_DOWNLOAD_START\x10)\x12\x1a\n\x16PIC_DOWNLOAD_COMPLETED\x10*\x12\x17\n\x13PIC_DOWNLOAD_FAILED\x10+\x12\x0b\n\x07GIVE_UP\x10,\x12\x0c\n\x08URL_JUMP\x10-\x12\x17\n\x13MENUAL_CLOSE_BUTTON\x10.\x12\x15\n\x11\x41UTO_CLOSE_BUTTON\x10/\x12\x19\n\x15INSTALL_REMIND_FAILED\x10\x30\x12\x13\n\x0fNEWS_IMPRESSION\x10\x31\x12\x0e\n\nNEWS_CLICK\x10\x32\x12\x13\n\x0f\x44OWNLOAD_FAILED\x10\x33\x12\x12\n\x0eINSTALL_FAILED\x10\x34\x12\x12\n\x0e\x41\x43TIVE2_FAILED\x10\x35\x12\x0b\n\x07\x41\x43TIVE3\x10\x36\x12\x12\n\x0e\x41\x43TIVE3_FAILED\x10\x37\x12\x0e\n\nAUTO_START\x10\x38*S\n\x06\x41\x64Type\x12\x13\n\x0fUNKNOWN_AD_TYPE\x10\x00\x12\n\n\x06\x42\x41NNER\x10\x01\x12\x10\n\x0cINTERSTITIAL\x10\x02\x12\n\n\x06SPLASH\x10\x03\x12\n\n\x06NATIVE\x10\x04*8\n\x08\x44\x65\x61lType\x12\x11\n\rNONE_DEALTYPE\x10\x00\x12\x07\n\x03\x43PM\x10\x01\x12\x07\n\x03\x43PC\x10\x03\x12\x07\n\x03\x43PD\x10\x05*C\n\x06OSType\x12\x0e\n\nUNKNOWN_OS\x10\x00\x12\x0b\n\x07\x41NDROID\x10\x01\x12\x07\n\x03IOS\x10\x02\x12\x0b\n\x07WINDOWS\x10\x03\x12\x06\n\x02\x42\x42\x10\x04*\xb8\x01\n\x0e\x43onnectionType\x12\x1a\n\x16UNKNOWN_CONNECTIONTYPE\x10\x00\x12\x0c\n\x08\x45THERNET\x10\x01\x12\x08\n\x04WIFI\x10\x02\x12\'\n#CELLULAR_NETWORK_UNKNOWN_GENERATION\x10\x03\x12\x17\n\x13\x43\x45LLULAR_NETWORK_2G\x10\x04\x12\x17\n\x13\x43\x45LLULAR_NETWORK_3G\x10\x05\x12\x17\n\x13\x43\x45LLULAR_NETWORK_4G\x10\x06*\x88\x01\n\x07\x43\x61rrier\x12\x13\n\x0fUNKNOWN_CARRIER\x10\x00\x12\x10\n\x0c\x43HINA_MOBILE\x10\x01\x12\x10\n\x0c\x43HINA_UNICOM\x10\x02\x12\x11\n\rCHINA_TELECOM\x10\x03\x12\x31\n-NATIONAL_RADIO_AND_TELEVISION_NETWORK_COMPANY\x10\x04*C\n\nDspApiType\x12\x18\n\x14UNKNOWN_DSP_API_TYPE\x10\x00\x12\x07\n\x03S2S\x10\x01\x12\x07\n\x03\x43\x32S\x10\x02\x12\t\n\x05\x41gC2S\x10\x03*@\n\nPubApiType\x12\x18\n\x14UNKNOWN_PUB_API_TYPE\x10\x00\x12\x0b\n\x07PUB_S2S\x10\x01\x12\x0b\n\x07PUB_C2S\x10\x02*i\n\x0c\x43reativeType\x12\x16\n\x12NONE_CREATIVE_TYPE\x10\x00\x12\x08\n\x04TEXT\x10\x01\x12\t\n\x05IMAGE\x10\x02\x12\x0e\n\nIMAGE_TEXT\x10\x03\x12\t\n\x05VIDEO\x10\x04\x12\x08\n\x04HTML\x10\x05\x12\x07\n\x03URL\x10\x06*\x83\x01\n\x0fInteractionType\x12\x12\n\x0eNO_INTERACTION\x10\x00\x12\x0b\n\x07SURFING\x10\x01\x12\n\n\x06IN_APP\x10\x02\x12\x0b\n\x07\x44OWLOAD\x10\x03\x12\x0b\n\x07\x44IALING\x10\x04\x12\x07\n\x03SMS\x10\x05\x12\t\n\x05\x45MAIL\x10\x06\x12\x15\n\x11REDIRECT_DOWNLOAD\x10\x07*O\n\x0b\x42iddingType\x12\x1c\n\x18UNKNOWN_DSP_BIDDING_TYPE\x10\x00\x12\x07\n\x03PDB\x10\x01\x12\x07\n\x03PPB\x10\x03\x12\x07\n\x03RTB\x10\x05\x12\x07\n\x03PMP\x10\x07*\xbf\x01\n\tValidType\x12\x08\n\x04ZERO\x10\x00\x12\r\n\tPRECESSED\x10\x01\x12\x0e\n\nDUPLICATED\x10\x03\x12\x0b\n\x07\x45XPIRED\x10\x05\x12\x16\n\x12IMPRESSION_EXPIRED\x10\x07\x12\x11\n\rNO_IMPRESSION\x10\t\x12\x0f\n\x0bIMEI_BANNED\x10\x0b\x12\r\n\tIP_BANNED\x10\r\x12\r\n\tUA_BANNED\x10\x0f\x12\x0f\n\x0bIMSI_BANNED\x10\x11\x12\x11\n\rUNKNOWN_ERROR\x10\x63*4\n\x07UseType\x12\x14\n\x10UNKNOWN_USE_TYPE\x10\x00\x12\x08\n\x04SELF\x10\x01\x12\t\n\x05OTHER\x10\x02*\xa5\x04\n\x08\x44ropType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x10\n\x0c\x44SP_BID_LOSE\x10\x01\x12\x17\n\x13\x44SP_UNDER_BID_FLOOR\x10\x02\x12\x13\n\x0f\x44SP_PARSE_ERROR\x10\x03\x12\x12\n\x0e\x44SP_NO_IMG_URL\x10\x04\x12\x0f\n\x0b\x44SP_NO_HTML\x10\x05\x12\x17\n\x13\x44SP_NO_DOWNLOAD_URL\x10\x06\x12\x15\n\x11\x44SP_NO_TARGET_URL\x10\x07\x12\x19\n\x15PUB_UNSUPPORT_SURFING\x10\x08\x12\x1a\n\x16PUB_UNSUPPORT_DOWNLOAD\x10\t\x12\x18\n\x14PUB_UNSUPPORT_IN_APP\x10\n\x12\x1a\n\x16PUB_UNSUPPORT_DEEPLINK\x10\x0b\x12\x1e\n\x1aPUB_UNSUPPORT_PRE_DOWNLOAD\x10\x0c\x12\x16\n\x12PUB_UNSUPPORT_TEXT\x10\r\x12\x17\n\x13PUB_UNSUPPORT_IMAGE\x10\x0e\x12\x1c\n\x18PUB_UNSUPPORT_IMAGE_TEXT\x10\x0f\x12\x16\n\x12PUB_UNSUPPORT_HTML\x10\x10\x12\x17\n\x13\x44SP_IMP2_NOT_ISSUED\x10\x11\x12\x14\n\x10VIDEO_NO_IMG_URL\x10\x12\x12\x16\n\x12VIDEO_UNMATCH_SIZE\x10\x13\x12\x1e\n\x1aVIDEO_NO_TITLE_PACKAGENAME\x10\x14\x12\x1c\n\x18VIDEO_ICON_NO_TITLE_DESC\x10\x15*L\n\rCsvLoadStatus\x12\x07\n\x03NEW\x10\x00\x12\x0b\n\x07LOADING\x10\x01\x12\n\n\x06LOADED\x10\x02\x12\x0c\n\x08\x43LEANING\x10\x03\x12\x0b\n\x07\x43LEANED\x10\x04*1\n\x10\x41gImp2ConfigType\x12\x0f\n\x0bNORMAL_IMP2\x10\x00\x12\x0c\n\x08PRE_IMP2\x10\x01\x42\x02H\x01\x62\x06proto3')
+  serialized_pb=_b('\n\x0b\x65nums.proto\x12\x17\x63om.chinamobiad.adx.idl*\x1b\n\x04\x42ool\x12\t\n\x05\x46\x61lse\x10\x00\x12\x08\n\x04True\x10\x01*\"\n\x06Status\x12\x0c\n\x08Inactive\x10\x00\x12\n\n\x06\x41\x63tive\x10\x01*c\n\x0b\x41uditStatus\x12\x0f\n\x0bUnSubmitted\x10\x00\x12\x14\n\x07\x44ropped\x10\xfe\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x14\n\x07Refused\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x0b\n\x07Pending\x10\x01\x12\n\n\x06Passed\x10\x02*%\n\nVisibility\x12\n\n\x06Hidden\x10\x00\x12\x0b\n\x07Visible\x10\x01*\xef\t\n\tEventType\x12\x16\n\x12UNKNOWN_EVENT_TYPE\x10\x00\x12\x15\n\x11PUBLISHER_REQUEST\x10\x01\x12\x0f\n\x0b\x42ID_REQUEST\x10\x02\x12\n\n\x06NO_BID\x10\x03\x12\x0f\n\x0b\x42ID_TIMEOUT\x10\x04\x12\x0e\n\nNOT_ISSUED\x10\x05\x12\n\n\x06ISSUED\x10\x06\x12\x0e\n\nIMPRESSION\x10\x07\x12\x0f\n\x0bIMPRESSION2\x10\x08\x12\t\n\x05\x43LICK\x10\t\x12\x12\n\x0e\x44OWNLOAD_START\x10\n\x12\x16\n\x12\x44OWNLOAD_COMPLETED\x10\x0b\x12\x11\n\rINSTALL_START\x10\x0c\x12\x15\n\x11INSTALL_COMPLETED\x10\r\x12\x0c\n\x08\x41PP_OPEN\x10\x0e\x12\x11\n\rAPP_ACTIVATED\x10\x0f\x12\x11\n\rCSS_REQUEST_1\x10\x10\x12\x10\n\x0c\x43SS_ISSUED_1\x10\x11\x12\x13\n\x0f\x43SS_SDK_REQUEST\x10\x12\x12\x12\n\x0e\x43SS_SDK_ISSUED\x10\x13\x12\x12\n\x0e\x43SS_SDK_FAILED\x10\x14\x12\x11\n\rCSS_REQUEST_2\x10\x15\x12\x13\n\x0f\x43SS_PARSE_START\x10\x16\x12\x15\n\x11\x43SS_PARSE_SUCCESS\x10\x17\x12\x10\n\x0c\x43SS_ISSUED_2\x10\x18\x12\x11\n\rC2S_REQUEST_2\x10\x19\x12\x1a\n\x16SDK_PRE_DOWNLOAD_START\x10\x1a\x12\x1e\n\x1aSDK_PRE_DOWNLOAD_COMPLETED\x10\x1b\x12\x1b\n\x17SDK_PRE_DOWNLOAD_FAILED\x10\x1c\x12\x1e\n\x1aPRE_DOWNLOAD_PARSE_REQUEST\x10\x1d\x12\x18\n\x14PRE_DOWNLOAD_SUCCESS\x10\x1e\x12\x17\n\x13PRE_DOWNLOAD_FAILED\x10\x1f\x12\x1f\n\x1bPRE_DOWNLOAD_PARSE_RESPONSE\x10 \x12\x08\n\x04\x44ROP\x10!\x12\x0b\n\x07\x41\x43TIVE2\x10\"\x12\x1e\n\x1a\x41\x44X_INTERCEPT_BY_FILL_RATE\x10#\x12\x1c\n\x18\x41\x44X_INTERCEPT_BY_TIMEOUT\x10$\x12\x13\n\x0f\x43\x32S_PRE_REQUEST\x10%\x12\x12\n\x0e\x43\x32S_PRE_ISSUED\x10&\x12\x13\n\x0f\x43\x32S_DSP_REQUEST\x10\'\x12\x12\n\x0e\x43\x32S_DSP_ISSUED\x10(\x12\x16\n\x12PIC_DOWNLOAD_START\x10)\x12\x1a\n\x16PIC_DOWNLOAD_COMPLETED\x10*\x12\x17\n\x13PIC_DOWNLOAD_FAILED\x10+\x12\x0b\n\x07GIVE_UP\x10,\x12\x0c\n\x08URL_JUMP\x10-\x12\x17\n\x13MENUAL_CLOSE_BUTTON\x10.\x12\x15\n\x11\x41UTO_CLOSE_BUTTON\x10/\x12\x19\n\x15INSTALL_REMIND_FAILED\x10\x30\x12\x13\n\x0fNEWS_IMPRESSION\x10\x31\x12\x0e\n\nNEWS_CLICK\x10\x32\x12\x13\n\x0f\x44OWNLOAD_FAILED\x10\x33\x12\x12\n\x0eINSTALL_FAILED\x10\x34\x12\x12\n\x0e\x41\x43TIVE2_FAILED\x10\x35\x12\x0b\n\x07\x41\x43TIVE3\x10\x36\x12\x12\n\x0e\x41\x43TIVE3_FAILED\x10\x37\x12\x0e\n\nAUTO_START\x10\x38\x12\r\n\tPAGE_LOAD\x10\x39\x12\x0e\n\nPAGE_CLOSE\x10:\x12\x0f\n\x0bPAGE_ACTION\x10;\x12\x16\n\x12PAGE_ACTION_FOR_AG\x10<*S\n\x06\x41\x64Type\x12\x13\n\x0fUNKNOWN_AD_TYPE\x10\x00\x12\n\n\x06\x42\x41NNER\x10\x01\x12\x10\n\x0cINTERSTITIAL\x10\x02\x12\n\n\x06SPLASH\x10\x03\x12\n\n\x06NATIVE\x10\x04*8\n\x08\x44\x65\x61lType\x12\x11\n\rNONE_DEALTYPE\x10\x00\x12\x07\n\x03\x43PM\x10\x01\x12\x07\n\x03\x43PC\x10\x03\x12\x07\n\x03\x43PD\x10\x05*C\n\x06OSType\x12\x0e\n\nUNKNOWN_OS\x10\x00\x12\x0b\n\x07\x41NDROID\x10\x01\x12\x07\n\x03IOS\x10\x02\x12\x0b\n\x07WINDOWS\x10\x03\x12\x06\n\x02\x42\x42\x10\x04*\xb8\x01\n\x0e\x43onnectionType\x12\x1a\n\x16UNKNOWN_CONNECTIONTYPE\x10\x00\x12\x0c\n\x08\x45THERNET\x10\x01\x12\x08\n\x04WIFI\x10\x02\x12\'\n#CELLULAR_NETWORK_UNKNOWN_GENERATION\x10\x03\x12\x17\n\x13\x43\x45LLULAR_NETWORK_2G\x10\x04\x12\x17\n\x13\x43\x45LLULAR_NETWORK_3G\x10\x05\x12\x17\n\x13\x43\x45LLULAR_NETWORK_4G\x10\x06*\x88\x01\n\x07\x43\x61rrier\x12\x13\n\x0fUNKNOWN_CARRIER\x10\x00\x12\x10\n\x0c\x43HINA_MOBILE\x10\x01\x12\x10\n\x0c\x43HINA_UNICOM\x10\x02\x12\x11\n\rCHINA_TELECOM\x10\x03\x12\x31\n-NATIONAL_RADIO_AND_TELEVISION_NETWORK_COMPANY\x10\x04*C\n\nDspApiType\x12\x18\n\x14UNKNOWN_DSP_API_TYPE\x10\x00\x12\x07\n\x03S2S\x10\x01\x12\x07\n\x03\x43\x32S\x10\x02\x12\t\n\x05\x41GC2S\x10\x03*@\n\nPubApiType\x12\x18\n\x14UNKNOWN_PUB_API_TYPE\x10\x00\x12\x0b\n\x07PUB_S2S\x10\x01\x12\x0b\n\x07PUB_C2S\x10\x02*i\n\x0c\x43reativeType\x12\x16\n\x12NONE_CREATIVE_TYPE\x10\x00\x12\x08\n\x04TEXT\x10\x01\x12\t\n\x05IMAGE\x10\x02\x12\x0e\n\nIMAGE_TEXT\x10\x03\x12\t\n\x05VIDEO\x10\x04\x12\x08\n\x04HTML\x10\x05\x12\x07\n\x03URL\x10\x06*\x83\x01\n\x0fInteractionType\x12\x12\n\x0eNO_INTERACTION\x10\x00\x12\x0b\n\x07SURFING\x10\x01\x12\n\n\x06IN_APP\x10\x02\x12\x0b\n\x07\x44OWLOAD\x10\x03\x12\x0b\n\x07\x44IALING\x10\x04\x12\x07\n\x03SMS\x10\x05\x12\t\n\x05\x45MAIL\x10\x06\x12\x15\n\x11REDIRECT_DOWNLOAD\x10\x07*O\n\x0b\x42iddingType\x12\x1c\n\x18UNKNOWN_DSP_BIDDING_TYPE\x10\x00\x12\x07\n\x03PDB\x10\x01\x12\x07\n\x03PPB\x10\x03\x12\x07\n\x03RTB\x10\x05\x12\x07\n\x03PMP\x10\x07*\xbf\x01\n\tValidType\x12\x08\n\x04ZERO\x10\x00\x12\r\n\tPRECESSED\x10\x01\x12\x0e\n\nDUPLICATED\x10\x03\x12\x0b\n\x07\x45XPIRED\x10\x05\x12\x16\n\x12IMPRESSION_EXPIRED\x10\x07\x12\x11\n\rNO_IMPRESSION\x10\t\x12\x0f\n\x0bIMEI_BANNED\x10\x0b\x12\r\n\tIP_BANNED\x10\r\x12\r\n\tUA_BANNED\x10\x0f\x12\x0f\n\x0bIMSI_BANNED\x10\x11\x12\x11\n\rUNKNOWN_ERROR\x10\x63*4\n\x07UseType\x12\x14\n\x10UNKNOWN_USE_TYPE\x10\x00\x12\x08\n\x04SELF\x10\x01\x12\t\n\x05OTHER\x10\x02*\xa5\x04\n\x08\x44ropType\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x10\n\x0c\x44SP_BID_LOSE\x10\x01\x12\x17\n\x13\x44SP_UNDER_BID_FLOOR\x10\x02\x12\x13\n\x0f\x44SP_PARSE_ERROR\x10\x03\x12\x12\n\x0e\x44SP_NO_IMG_URL\x10\x04\x12\x0f\n\x0b\x44SP_NO_HTML\x10\x05\x12\x17\n\x13\x44SP_NO_DOWNLOAD_URL\x10\x06\x12\x15\n\x11\x44SP_NO_TARGET_URL\x10\x07\x12\x19\n\x15PUB_UNSUPPORT_SURFING\x10\x08\x12\x1a\n\x16PUB_UNSUPPORT_DOWNLOAD\x10\t\x12\x18\n\x14PUB_UNSUPPORT_IN_APP\x10\n\x12\x1a\n\x16PUB_UNSUPPORT_DEEPLINK\x10\x0b\x12\x1e\n\x1aPUB_UNSUPPORT_PRE_DOWNLOAD\x10\x0c\x12\x16\n\x12PUB_UNSUPPORT_TEXT\x10\r\x12\x17\n\x13PUB_UNSUPPORT_IMAGE\x10\x0e\x12\x1c\n\x18PUB_UNSUPPORT_IMAGE_TEXT\x10\x0f\x12\x16\n\x12PUB_UNSUPPORT_HTML\x10\x10\x12\x17\n\x13\x44SP_IMP2_NOT_ISSUED\x10\x11\x12\x14\n\x10VIDEO_NO_IMG_URL\x10\x12\x12\x16\n\x12VIDEO_UNMATCH_SIZE\x10\x13\x12\x1e\n\x1aVIDEO_NO_TITLE_PACKAGENAME\x10\x14\x12\x1c\n\x18VIDEO_ICON_NO_TITLE_DESC\x10\x15*G\n\x0ePlanChangeType\x12\x12\n\x0e\x43HANGE_UNKNOWN\x10\x00\x12\r\n\tBID_PRICE\x10\x01\x12\x12\n\x0eREQUEST_STATUS\x10\x02*1\n\x10\x41gImp2ConfigType\x12\x0f\n\x0bNORMAL_IMP2\x10\x00\x12\x0c\n\x08PRE_IMP2\x10\x01*P\n\x0cSimpleSimple\x12\x13\n\x0fUNKNOWN_UNKNOWN\x10\x00\x12\x13\n\x06SIMPLE\x10\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01\x12\x16\n\tCOMPLETED\x10\xfe\xff\xff\xff\xff\xff\xff\xff\xff\x01*P\n\x0cReportedType\x12\x0f\n\x0bUN_REPORTED\x10\x00\x12\x16\n\x12REPORTED_BY_ACTUAL\x10\x01\x12\x17\n\x13REPORTED_BY_SETTING\x10\x02\x42\x02H\x01\x62\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -105,6 +105,29 @@ _AUDITSTATUS = _descriptor.EnumDescriptor(
 _sym_db.RegisterEnumDescriptor(_AUDITSTATUS)
 
 AuditStatus = enum_type_wrapper.EnumTypeWrapper(_AUDITSTATUS)
+_VISIBILITY = _descriptor.EnumDescriptor(
+  name='Visibility',
+  full_name='com.chinamobiad.adx.idl.Visibility',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='Hidden', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='Visible', index=1, number=1,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=206,
+  serialized_end=243,
+)
+_sym_db.RegisterEnumDescriptor(_VISIBILITY)
+
+Visibility = enum_type_wrapper.EnumTypeWrapper(_VISIBILITY)
 _EVENTTYPE = _descriptor.EnumDescriptor(
   name='EventType',
   full_name='com.chinamobiad.adx.idl.EventType',
@@ -339,11 +362,27 @@ _EVENTTYPE = _descriptor.EnumDescriptor(
       name='AUTO_START', index=56, number=56,
       options=None,
       type=None),
+    _descriptor.EnumValueDescriptor(
+      name='PAGE_LOAD', index=57, number=57,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='PAGE_CLOSE', index=58, number=58,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='PAGE_ACTION', index=59, number=59,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='PAGE_ACTION_FOR_AG', index=60, number=60,
+      options=None,
+      type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=207,
-  serialized_end=1398,
+  serialized_start=246,
+  serialized_end=1509,
 )
 _sym_db.RegisterEnumDescriptor(_EVENTTYPE)
 
@@ -377,8 +416,8 @@ _ADTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1400,
-  serialized_end=1483,
+  serialized_start=1511,
+  serialized_end=1594,
 )
 _sym_db.RegisterEnumDescriptor(_ADTYPE)
 
@@ -408,8 +447,8 @@ _DEALTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1485,
-  serialized_end=1541,
+  serialized_start=1596,
+  serialized_end=1652,
 )
 _sym_db.RegisterEnumDescriptor(_DEALTYPE)
 
@@ -443,8 +482,8 @@ _OSTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1543,
-  serialized_end=1610,
+  serialized_start=1654,
+  serialized_end=1721,
 )
 _sym_db.RegisterEnumDescriptor(_OSTYPE)
 
@@ -486,8 +525,8 @@ _CONNECTIONTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1613,
-  serialized_end=1797,
+  serialized_start=1724,
+  serialized_end=1908,
 )
 _sym_db.RegisterEnumDescriptor(_CONNECTIONTYPE)
 
@@ -521,8 +560,8 @@ _CARRIER = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1800,
-  serialized_end=1936,
+  serialized_start=1911,
+  serialized_end=2047,
 )
 _sym_db.RegisterEnumDescriptor(_CARRIER)
 
@@ -546,14 +585,14 @@ _DSPAPITYPE = _descriptor.EnumDescriptor(
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='AgC2S', index=3, number=3,
+      name='AGC2S', index=3, number=3,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=1938,
-  serialized_end=2005,
+  serialized_start=2049,
+  serialized_end=2116,
 )
 _sym_db.RegisterEnumDescriptor(_DSPAPITYPE)
 
@@ -579,8 +618,8 @@ _PUBAPITYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2007,
-  serialized_end=2071,
+  serialized_start=2118,
+  serialized_end=2182,
 )
 _sym_db.RegisterEnumDescriptor(_PUBAPITYPE)
 
@@ -622,8 +661,8 @@ _CREATIVETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2073,
-  serialized_end=2178,
+  serialized_start=2184,
+  serialized_end=2289,
 )
 _sym_db.RegisterEnumDescriptor(_CREATIVETYPE)
 
@@ -669,8 +708,8 @@ _INTERACTIONTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2181,
-  serialized_end=2312,
+  serialized_start=2292,
+  serialized_end=2423,
 )
 _sym_db.RegisterEnumDescriptor(_INTERACTIONTYPE)
 
@@ -704,8 +743,8 @@ _BIDDINGTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2314,
-  serialized_end=2393,
+  serialized_start=2425,
+  serialized_end=2504,
 )
 _sym_db.RegisterEnumDescriptor(_BIDDINGTYPE)
 
@@ -763,8 +802,8 @@ _VALIDTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2396,
-  serialized_end=2587,
+  serialized_start=2507,
+  serialized_end=2698,
 )
 _sym_db.RegisterEnumDescriptor(_VALIDTYPE)
 
@@ -790,8 +829,8 @@ _USETYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2589,
-  serialized_end=2641,
+  serialized_start=2700,
+  serialized_end=2752,
 )
 _sym_db.RegisterEnumDescriptor(_USETYPE)
 
@@ -893,47 +932,39 @@ _DROPTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=2644,
-  serialized_end=3193,
+  serialized_start=2755,
+  serialized_end=3304,
 )
 _sym_db.RegisterEnumDescriptor(_DROPTYPE)
 
 DropType = enum_type_wrapper.EnumTypeWrapper(_DROPTYPE)
-_CSVLOADSTATUS = _descriptor.EnumDescriptor(
-  name='CsvLoadStatus',
-  full_name='com.chinamobiad.adx.idl.CsvLoadStatus',
+_PLANCHANGETYPE = _descriptor.EnumDescriptor(
+  name='PlanChangeType',
+  full_name='com.chinamobiad.adx.idl.PlanChangeType',
   filename=None,
   file=DESCRIPTOR,
   values=[
     _descriptor.EnumValueDescriptor(
-      name='NEW', index=0, number=0,
+      name='CHANGE_UNKNOWN', index=0, number=0,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LOADING', index=1, number=1,
+      name='BID_PRICE', index=1, number=1,
       options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
-      name='LOADED', index=2, number=2,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='CLEANING', index=3, number=3,
-      options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='CLEANED', index=4, number=4,
+      name='REQUEST_STATUS', index=2, number=2,
       options=None,
       type=None),
   ],
   containing_type=None,
   options=None,
-  serialized_start=3195,
-  serialized_end=3271,
+  serialized_start=3306,
+  serialized_end=3377,
 )
-_sym_db.RegisterEnumDescriptor(_CSVLOADSTATUS)
+_sym_db.RegisterEnumDescriptor(_PLANCHANGETYPE)
 
-CsvLoadStatus = enum_type_wrapper.EnumTypeWrapper(_CSVLOADSTATUS)
+PlanChangeType = enum_type_wrapper.EnumTypeWrapper(_PLANCHANGETYPE)
 _AGIMP2CONFIGTYPE = _descriptor.EnumDescriptor(
   name='AgImp2ConfigType',
   full_name='com.chinamobiad.adx.idl.AgImp2ConfigType',
@@ -951,12 +982,66 @@ _AGIMP2CONFIGTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=3273,
-  serialized_end=3322,
+  serialized_start=3379,
+  serialized_end=3428,
 )
 _sym_db.RegisterEnumDescriptor(_AGIMP2CONFIGTYPE)
 
 AgImp2ConfigType = enum_type_wrapper.EnumTypeWrapper(_AGIMP2CONFIGTYPE)
+_SIMPLESIMPLE = _descriptor.EnumDescriptor(
+  name='SimpleSimple',
+  full_name='com.chinamobiad.adx.idl.SimpleSimple',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='UNKNOWN_UNKNOWN', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='SIMPLE', index=1, number=-1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='COMPLETED', index=2, number=-2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=3430,
+  serialized_end=3510,
+)
+_sym_db.RegisterEnumDescriptor(_SIMPLESIMPLE)
+
+SimpleSimple = enum_type_wrapper.EnumTypeWrapper(_SIMPLESIMPLE)
+_REPORTEDTYPE = _descriptor.EnumDescriptor(
+  name='ReportedType',
+  full_name='com.chinamobiad.adx.idl.ReportedType',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='UN_REPORTED', index=0, number=0,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='REPORTED_BY_ACTUAL', index=1, number=1,
+      options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='REPORTED_BY_SETTING', index=2, number=2,
+      options=None,
+      type=None),
+  ],
+  containing_type=None,
+  options=None,
+  serialized_start=3512,
+  serialized_end=3592,
+)
+_sym_db.RegisterEnumDescriptor(_REPORTEDTYPE)
+
+ReportedType = enum_type_wrapper.EnumTypeWrapper(_REPORTEDTYPE)
 # False = 0
 # True = 1
 Inactive = 0
@@ -966,6 +1051,8 @@ Dropped = -2
 Refused = -1
 Pending = 1
 Passed = 2
+Hidden = 0
+Visible = 1
 UNKNOWN_EVENT_TYPE = 0
 PUBLISHER_REQUEST = 1
 BID_REQUEST = 2
@@ -1023,6 +1110,10 @@ ACTIVE2_FAILED = 53
 ACTIVE3 = 54
 ACTIVE3_FAILED = 55
 AUTO_START = 56
+PAGE_LOAD = 57
+PAGE_CLOSE = 58
+PAGE_ACTION = 59
+PAGE_ACTION_FOR_AG = 60
 UNKNOWN_AD_TYPE = 0
 BANNER = 1
 INTERSTITIAL = 2
@@ -1052,7 +1143,7 @@ NATIONAL_RADIO_AND_TELEVISION_NETWORK_COMPANY = 4
 UNKNOWN_DSP_API_TYPE = 0
 S2S = 1
 C2S = 2
-AgC2S = 3
+AGC2S = 3
 UNKNOWN_PUB_API_TYPE = 0
 PUB_S2S = 1
 PUB_C2S = 2
@@ -1112,18 +1203,23 @@ VIDEO_NO_IMG_URL = 18
 VIDEO_UNMATCH_SIZE = 19
 VIDEO_NO_TITLE_PACKAGENAME = 20
 VIDEO_ICON_NO_TITLE_DESC = 21
-NEW = 0
-LOADING = 1
-LOADED = 2
-CLEANING = 3
-CLEANED = 4
+CHANGE_UNKNOWN = 0
+BID_PRICE = 1
+REQUEST_STATUS = 2
 NORMAL_IMP2 = 0
 PRE_IMP2 = 1
+UNKNOWN_UNKNOWN = 0
+SIMPLE = -1
+COMPLETED = -2
+UN_REPORTED = 0
+REPORTED_BY_ACTUAL = 1
+REPORTED_BY_SETTING = 2
 
 
 DESCRIPTOR.enum_types_by_name['Bool'] = _BOOL
 DESCRIPTOR.enum_types_by_name['Status'] = _STATUS
 DESCRIPTOR.enum_types_by_name['AuditStatus'] = _AUDITSTATUS
+DESCRIPTOR.enum_types_by_name['Visibility'] = _VISIBILITY
 DESCRIPTOR.enum_types_by_name['EventType'] = _EVENTTYPE
 DESCRIPTOR.enum_types_by_name['AdType'] = _ADTYPE
 DESCRIPTOR.enum_types_by_name['DealType'] = _DEALTYPE
@@ -1138,8 +1234,10 @@ DESCRIPTOR.enum_types_by_name['BiddingType'] = _BIDDINGTYPE
 DESCRIPTOR.enum_types_by_name['ValidType'] = _VALIDTYPE
 DESCRIPTOR.enum_types_by_name['UseType'] = _USETYPE
 DESCRIPTOR.enum_types_by_name['DropType'] = _DROPTYPE
-DESCRIPTOR.enum_types_by_name['CsvLoadStatus'] = _CSVLOADSTATUS
+DESCRIPTOR.enum_types_by_name['PlanChangeType'] = _PLANCHANGETYPE
 DESCRIPTOR.enum_types_by_name['AgImp2ConfigType'] = _AGIMP2CONFIGTYPE
+DESCRIPTOR.enum_types_by_name['SimpleSimple'] = _SIMPLESIMPLE
+DESCRIPTOR.enum_types_by_name['ReportedType'] = _REPORTEDTYPE
 
 
 DESCRIPTOR.has_options = True
